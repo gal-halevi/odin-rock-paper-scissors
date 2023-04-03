@@ -42,11 +42,19 @@
                     return 'You win! Paper beats rock';
                 }
                 else {
-                    return 'You lose! scissors beats Paper';
+                    return 'You lose! Scissors beats Paper';
                 }
             }
-
         }
+
+        function game() {
+            for (i=0; i < 5; i++) {
+                let playerSelection = prompt("What is your choice? (Rock, Paper, Scissors)");
+                console.log(playRound(playerSelection, getComputerChoice()));
+            }
+        }
+
+        game();
     </script>
     
 </body>
